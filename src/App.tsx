@@ -14,11 +14,11 @@ const Logo = ({ size = 36, showText = true }: { size?: number; showText?: boolea
       src="/logo.png"
       alt="ACAD Logo"
       style={{ height:size, width:"auto", objectFit:"contain", borderRadius:6 }}
-      />
+    />
     {showText && (
       <div style={{ lineHeight:1 }}>
-        <div style={{ fontWeight:800, fontSize:18, color:C.textPrimary, letterSpacing:1 }}>ACAD</div>
-        <div style={{ fontSize:9, color:C.textMuted, letterSpacing:2, textTransform:"uppercase" }}>Online Tuition</div>
+        <div style={{ fontWeight:800, fontSize:18, color:"#e2e8f0", letterSpacing:1 }}>ACAD</div>
+        <div style={{ fontSize:9, color:"#64748b", letterSpacing:2, textTransform:"uppercase" }}>Online Tuition</div>
       </div>
     )}
   </div>
