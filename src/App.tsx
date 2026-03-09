@@ -14,15 +14,7 @@ const Logo = ({ size = 36, showText = true }: { size?: number; showText?: boolea
       src="/logo.png"
       alt="ACAD Logo"
       style={{ height:size, width:"auto", objectFit:"contain", borderRadius:6 }}
-      onError={(e) => {
-        const el = e.currentTarget as HTMLImageElement;
-        el.style.display = "none";
-        const fb = document.createElement("div");
-        fb.style.cssText = `width:${size}px;height:${size}px;border-radius:10px;background:linear-gradient(135deg,#6c63ff,#3b82f6);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:${Math.round(size*0.44)}px;color:#fff;letter-spacing:-1px;`;
-        fb.textContent = "AC";
-        el.parentNode?.insertBefore(fb, el);
-      }}
-    />
+      />
     {showText && (
       <div style={{ lineHeight:1 }}>
         <div style={{ fontWeight:800, fontSize:18, color:C.textPrimary, letterSpacing:1 }}>ACAD</div>
